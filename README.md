@@ -2,6 +2,8 @@
 
 멀티모듈을 구성하여 API 호출 및 JPA 와의 연동을 목표로 합니다.
 
+- https://github.com/smileboy0014/task/blob/master/module-search/build/libs/module-search-0.0.1-SNAPSHOT.jar 이 링크를 통해 jar 를 다운받아 볼 수 있습니다.
+
 ## Getting Started
 
 스프링 부트를 사용해 프로젝트를 진행하다 보면 여러 기능 별로 서버가 필요할 수 있습니다. 예를 들어 API 서버, 파일 서버, batch 서버 등. API 서버 내에서도 호출하는 영역이나 기능에 따라 분류될 수 있다.
