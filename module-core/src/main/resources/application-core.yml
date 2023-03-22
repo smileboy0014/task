@@ -1,0 +1,33 @@
+spring:
+  h2:
+    console:
+      enabled: true
+#  redis:
+ #   host: localhost # 자신이 설정한 redis host 정보 넣기
+  #  port: 6379
+
+  datasource: # db 관련 설정
+    url: jdbc:h2:mem:testdb;MODE=MySQL;
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+
+  jpa: # jpa 관련 설정
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+        hbm2ddl:
+          auto: update
+        generate_statistics: false # 하이버네이트가 여러 통계정보를 출력하게 해주는데 캐시 적용 여부를 확인
+ # cache:
+  #  type: redis
+   # redis:
+    #  cache-null-values: true
+
+logging:
+  level:
+    org.hibernate.SQL: info # 로그레벨에 따라 sql 문이 보임
+    org.hibernate.type: trace
+

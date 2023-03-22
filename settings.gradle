@@ -1,0 +1,4 @@
+rootProject.name = 'task'
+include 'module-core'
+include 'module-search'
+
